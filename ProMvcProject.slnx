@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ProMvcProject.Domain/ProMvcProject.Domain.csproj" />
+  <Project Path="ProMvcProject.Infrastructure/ProMvcProject.Infrastructure.csproj" />
+  <Project Path="ProMvcProject.Web/ProMvcProject.Web.csproj" />
+</Solution>
