@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ProMvcProject.Web.DTOs.ProductDto>
+
+@{
+    ViewData["Title"] = "Our Products";
+}
+
+<h1>Product Catalog</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
