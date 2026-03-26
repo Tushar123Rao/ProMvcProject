@@ -15,7 +15,7 @@ namespace ProMvcProject.Web.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<ProductDto>> GetAvailableProductAsync()
+        public async Task<IEnumerable<ProductDto>> GetAvailableProductsAsync()
         {
             var products = await _repository.GetAllAsync();
             return products.Select(p => new ProductDto
